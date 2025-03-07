@@ -1,6 +1,6 @@
 # Projeto TCC - Análise de Dados com Dash
 
-Este projeto permite visualizar e analisar dados de forma interativa utilizando o Dash e Plotly. O aplicativo foi desenvolvido com Python e utiliza bibliotecas como Pandas, Plotly, e Scikit-learn.
+Este projeto permite visualizar e analisar dados de forma interativa utilizando o Dash e Plotly. O aplicativo foi desenvolvido com Python e utiliza bibliotecas como Pandas, Plotly e Scikit-learn.
 
 ## Requisitos
 
