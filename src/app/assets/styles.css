@@ -1,0 +1,259 @@
+/* Definindo o estilo global para garantir que o layout seja flexível e responsivo */
+body, html {
+    height: 100%;  
+    margin: 0;     
+    padding: 0;    
+    font-family: Arial, sans-serif; 
+}
+
+/* Adiciona margem superior para páginas que não são a inicial */
+.page-content {
+    margin-top: 3rem; 
+    padding: 1rem;
+}
+
+
+/* Navbar fixa no topo */
+.navbar {
+    position: fixed;  /* Navbar fixa no topo da tela */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Garante que a navbar fique acima de outros elementos */
+    background-color: #007bff; 
+    color: white; 
+    height: 60px; /* Altura padrão da navbar */
+    display: flex;
+    align-items: center; 
+    padding: 0 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Garante que o container principal ocupe toda a altura e seja flexível */
+#page-inicial {
+    margin-top: 3rem; /* Espaço para compensar a navbar fixa */
+    height: calc(100vh - 60px); /* Altura total da tela menos a navbar */
+    overflow-y: auto; /* Permite rolagem vertical apenas no conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 1rem; 
+}
+
+/* Título principal */
+.text-center {
+    text-align: center; 
+}
+
+.display-4 {
+    font-size: 2.5rem; 
+}
+
+/* Cards */
+.card {
+    border-radius: 0.5rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
+    width: 90%;
+    max-width: 600px; 
+    margin: 1rem 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ícones e textos centralizados no card */
+.card-body {
+    text-align: center; 
+}
+
+/* Estilo para os ícones dos cards */
+.card-body i {
+    font-size: 3rem;
+    color: white; 
+}
+
+/* Estilo para os títulos dos cards */
+.card-title {
+    font-size: 1.5rem; 
+    color: white;
+}
+
+/* Estilo para o texto dos cards */
+.card-text {
+    font-size: 1rem; 
+    color: white; 
+}
+
+/* Remove a área clicável extra dos links */
+.card-link {
+    display: block; 
+    text-decoration: none; 
+    width: 100%; 
+}
+
+/* Garante que o link não ultrapasse os limites do card */
+.card-link .card {
+    margin: 0 auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Estilo ao passar o mouse */
+.card-link:hover .card {
+    transform: scale(1.03); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/* Responsividade: Ajusta o layout para telas menores */
+
+@media (max-width: 1200px) {    
+    .display-4 {
+        font-size: 2rem; 
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card i {
+        font-size: 2rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-title {
+        font-size: 1.25rem; 
+    }
+
+    .card-text {
+        font-size: 0.875rem; 
+    }
+
+    .card i {
+        font-size: 2.5rem; 
+    }
+
+    .card {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+   
+    .display-4 {
+        font-size: 1.75rem; 
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .card {
+        margin-bottom: 1rem; 
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+    }
+
+    .card-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* Ajuste geral para os links de navegação no card */
+a {
+    text-decoration: none;  
+    color: inherit; 
+}
+
+a:hover {
+    color: #004085;  
+
+}
+
+/* Alterando tema dos dropdowns */
+/* Estilos para o tema claro */
+.light-theme .themed-dropdown .Select-control {
+    background-color: #ffffff !important;
+    color: black !important; 
+    border-color: #cccccc !important;
+}
+
+.light-theme .themed-dropdown .Select-menu-outer {
+    background-color: #ffffff !important;
+}
+
+.light-theme .themed-dropdown .Select-placeholder {
+    color: black !important;
+}
+
+.light-theme .themed-dropdown .Select-value {
+    color: black !important; 
+}
+
+.light-theme .themed-dropdown .Select-value-label {
+    color: black !important; 
+}
+
+/* Estilos para o tema escuro */
+.dark-theme .themed-dropdown .Select-control {
+    background-color: #333333 !important;
+    color: white !important; 
+    border-color: #666666 !important;
+}
+
+.dark-theme .themed-dropdown .Select-menu-outer {
+    background-color: #333333 !important;
+}
+
+.dark-theme .themed-dropdown .Select-placeholder {
+    color: white !important;
+}
+
+.dark-theme .themed-dropdown .Select-value {
+    color: white !important;  
+}
+
+.dark-theme .themed-dropdown .Select-value-label {
+    color: white !important; 
+}
+
+
+/* navbar estilos */
+
+.navbar-collapse {
+    background-color: #007bff !important; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;  
+    padding-top: 10px; 
+    padding-left: 20px;  
+    width: 100%; 
+}
+
+.navbar-custom .nav-link {
+    font-weight: bold;
+}
+
+.abnt-text {
+    text-align: justify;  
+    line-height: 1.5;     
+    margin: 0 1rem;        
+    font-size: 1rem;      
+    color: #fff;           
+}
