@@ -14,8 +14,8 @@ Certifique-se de ter as seguintes ferramentas instaladas em seu sistema:
 1. **Clone este repositório:**
 
    ```
-   git clone https://github.com/martinsevandro/tcc_data.git
-   cd tcc_data
+   git clone https://github.com/martinsevandro/tcc_dash.git
+   cd tcc_dash
    ```
 
 2. Instale o ambiente Conda:
