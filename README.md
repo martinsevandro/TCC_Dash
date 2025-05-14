@@ -1,6 +1,6 @@
-# Projeto TCC - Análise de Dados com Dash
+# Projeto TCC: Indicadores de Desempenho Escolar: Uma Abordagem Baseada em Visualização de Dados 
 
-Este projeto permite visualizar e analisar dados de forma interativa utilizando o Dash e Plotly. O aplicativo foi desenvolvido com Python e utiliza bibliotecas como Pandas, Plotly e Scikit-learn.
+Este projeto permite visualizar e analisar dados de forma interativa utilizando o Dash e Plotly. O aplicativo foi desenvolvido com Python e utiliza bibliotecas como Pandas, Plotly e Matplotlib.
 
 ## Requisitos
 
